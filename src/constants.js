@@ -1,4 +1,5 @@
-// const Colors{
+export const Colors ={
 
-// }
-// module.exports = Colors ;
+    primaryColor: '#25A7F7', //logo light blue color 
+
+}
