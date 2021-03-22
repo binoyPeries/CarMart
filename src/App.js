@@ -1,10 +1,9 @@
-import './App.css';
+import './index.css';
+import NaviBar from './components/navbar';
 
 function App() {
   return (
-    <div className="App container">
-     <h1>d</h1>
-    </div>
+    <NaviBar/>
   );
 }
 
