@@ -11,8 +11,26 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
-
+/* navbar */
 .navbar-custom{
-  margin-top: 0;
-  background-color: rgba(238, 236, 236, 0.5);;
+  box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  background-color: rgba(228, 222, 222, 0.5);;
+}
+
+.nav-custom{
+  margin-right: 20px;
+  
+}
+.nav-item{
+  padding: 0 20px !important;
+}
+.nav-btn{
+  color: #25A7F7 !important;
+  font-weight: 600  !important;
+  border-color: transparent !important;
+}
+.nav-btn:hover{
+  background-color: #25A7F7  !important;
+  color: white  !important;
+
 }
