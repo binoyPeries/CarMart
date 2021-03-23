@@ -3,6 +3,7 @@ import NaviBar from './components/navbar';
 import Home from './components/home';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import Footer from './components/footer';
+import Register from './components/register';
 
 
 function App() {
@@ -15,8 +16,8 @@ function App() {
         <Route exact path='/'>
           <Home/>
         </Route>
-        <Route exact path='/more'>
-          <h1>hello</h1>
+        <Route exact path='/register'>
+          <Register/>
         </Route>
       </Switch>
       </div>
