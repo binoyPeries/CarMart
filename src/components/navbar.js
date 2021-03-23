@@ -29,15 +29,15 @@ const NaviBar = () => {
             <Nav className="ml-auto nav-custom" >
 
             {/* no user logged in */}
-            {/* <Nav.Link href="/" className='nav-item'>
+            <Nav.Link href="/register" className='nav-item'>
               <button className="nav-btn btn btn-outline-primary ">Register</button>
             </Nav.Link>
             <Nav.Link href="/" className='nav-item'>
             <button className="nav-btn btn btn-outline-primary " >Login</button>
-            </Nav.Link> */}
+            </Nav.Link>
 
             {/* user logged in */}
-            <Nav.Link  className='nav-item'>
+            {/* <Nav.Link  className='nav-item'>
             <FontAwesomeIcon icon={faCar}  size="2x" style={{color:'#25A7F7'}}/>
             </Nav.Link>
             <Nav.Link href="/" className='nav-item'>
@@ -45,7 +45,7 @@ const NaviBar = () => {
             </Nav.Link>
             <Nav.Link href="/" className='nav-item'>
             <button className="nav-btn btn btn-outline-primary " >Logout</button>
-            </Nav.Link>
+            </Nav.Link> */}
             
 
             </Nav>
