@@ -4,6 +4,8 @@ import Home from './components/home';
 import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
 import Footer from './components/footer';
 import Register from './components/register';
+import Profile from './components/profile';
+import AddVehicle from './components/addVehicle';
 
 
 function App() {
@@ -18,6 +20,12 @@ function App() {
         </Route>
         <Route exact path='/register'>
           <Register/>
+        </Route>
+        <Route exact path='/profile'>
+          <Profile/>
+        </Route>
+        <Route exact path='/add'>
+         <AddVehicle/>
         </Route>
       </Switch>
       </div>
