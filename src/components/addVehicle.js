@@ -140,7 +140,7 @@ const AddVehicle = () => {
                             
                             />
                             <InputGroup.Append>
-                            <InputGroup.Text id="basic-addon2">Rs</InputGroup.Text>
+                            <InputGroup.Text id="basic-addon2">LKR</InputGroup.Text>
                             </InputGroup.Append>
                             </InputGroup>
                     </Col>
