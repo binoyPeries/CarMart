@@ -130,11 +130,13 @@ const Profile = () => {
             </Card>
         </Container>
         {/* temo butto */}
-        <Button variant="primary"  className="register-btn" >
+       
         <Link to='/add'>
-            Add your Advertisment
+            <Button variant="primary"  className="register-btn" >
+                Add your Advertisment
+            </Button>
         </Link>
-        </Button>
+        
         </Container>
 
      );
