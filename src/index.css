@@ -152,3 +152,10 @@ code {
   background-color: #1a6aae  !important;
   font-weight: 700 !important;
 }
+
+.image-upload-field{
+  border: #1a6aae
+}
+.add-vehicle-sub-heading{
+  color: #1a6aae;
+}
