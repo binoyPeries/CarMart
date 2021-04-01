@@ -7,7 +7,7 @@
 
  import {useState, useEffect, useRef} from 'react';
 const delay = 4000;
-const images = [ss1,ss2,ss3,ss4];
+const images = [ss2,ss1,ss3,ss4];
 
 
 const Home = () => {
