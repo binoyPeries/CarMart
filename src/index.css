@@ -159,3 +159,28 @@ code {
 .add-vehicle-sub-heading{
   color: #1a6aae;
 }
+
+/* vehicle preview card */
+.vehicle-card{
+  max-height: 400px ;
+  max-width: 600px;
+  color: #1a6aae;
+}
+.see-more{
+  display: none !important;
+  color: inherit;
+  text-decoration: none !important;
+}
+
+.vehicle-card:hover{
+  padding: 10px !important;
+  box-shadow: 0px 0px 50px 0px rgba(0,0,0,0.2) !important;
+
+}
+.vehicle-card:hover  .see-more{
+  display: inline-block !important;
+  display: flex !important;
+  align-items: center !important;
+ 
+
+}
