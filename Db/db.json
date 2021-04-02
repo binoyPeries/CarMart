@@ -1,0 +1,50 @@
+{
+    "vehicles":[
+        {
+            "id":1,
+            "user_id":1,
+            "type": "car",
+            "make": "toyota",
+            "model":"civic",
+            "price":2500000,
+            "condition":"new",
+            "year":2010,
+            "milege":250000,
+            "fuel_type":"petrol",
+            "engine":1500,
+            "transmission":"auto",
+            "front_img":"../public/temp/front.jpg",
+            "back_img":"../public/temp/back.jpg",
+            "interior_img":"../public/temp/interior.jpg"
+
+        },
+
+        {
+            "id":2,
+            "user_id":1,
+            "type": "van",
+            "make": "hilux",
+            "model":"h23",
+            "price":25000000,
+            "condition":"used",
+            "year":2010,
+            "milege":250000,
+            "fuel_type":"diesel",
+            "engine":1500,
+            "transmission":"auto",
+            "front_img":"../public/temp/front.jpg",
+            "back_img":"../public/temp/back.jpg",
+            "interior_img":"../public/temp/interior.jpg"
+
+        }
+    ],
+    "users":[
+        {
+            "id":1,
+            "first_name":"binoy",
+            "last_name":"peries",
+            "email":"b@gmail.com",
+            "password":"123456"
+        }
+    ]
+}
