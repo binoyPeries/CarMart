@@ -6,6 +6,7 @@ import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
+import VehicleCard from './vehicleCard';
 
 
 const Profile = () => {
@@ -131,6 +132,10 @@ const Profile = () => {
         </Container>
         {/* temo butto */}
        
+       <h3>your vehicles</h3>
+       <VehicleCard liked={true} />
+
+       <br/>
         <Link to='/add'>
             <Button variant="primary"  className="register-btn" >
                 Add your Advertisment
