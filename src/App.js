@@ -33,8 +33,9 @@ function App() {
     </div>
 
     </Router>
-    
-    
+    //to run the server
+    // npx json-server --watch Db/db.json --port 8000 
+
   );
 }
 
