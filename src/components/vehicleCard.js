@@ -27,21 +27,23 @@ const VehicleCard = (props) => {
                     </Col>
                     <Col lg={5} style={{paddingLeft:"0px"}} >
                         
-                        <h4 style={{fontWeight:"600"}} className="text-right"> 
-                        <span style={{paddingRight:"20px"}}>TOYOTA CIVIC</span> 
-                        <FontAwesomeIcon icon={ isliked == true ? solidHeart : heart } size="1x" style={{color:"#1a6aae",}} onClick={toggleLike} />
+                        <h4 style={{fontWeight:"600", marginBottom:"20px"}} className="text-right"> 
+                        <span>TOYOTA CIVIC 2010 </span> 
+                        {/* <FontAwesomeIcon icon={ isliked == true ? solidHeart : heart } size="1x" style={{color:"#1a6aae",}} onClick={toggleLike} /> */}
                         </h4>
-                        <br/>
-                        <h5 style={{color:"black"}}> Year 2010</h5>
-                        <h4 style={{color:"black"}} > LKR 2,500,000</h4>
+                        <h5 style={{color:"black"}} > LKR 2,500,000</h5>
+                        <h6 style={{color:"black"}} > Colombo, Sri Lanka</h6>
+
                         <div className="text-left">
+                            <FontAwesomeIcon icon={ isliked == true ? solidHeart : heart }  style={{color:"#1a6aae",fontSize:"20px"}} onClick={toggleLike} /> 
+                            <span onClick={toggleLike} style={{cursor:"pointer",userSelect:"none",fontWeight:"600"}}> Add to favourites </span> 
 
                         </div>
                     
                     </Col>
                     <Link to='/'  className="see-more">
                     <Col lg={2}>
-                    <FontAwesomeIcon icon={faChevronRight} size="3x" color={{color:"#1a6aae"}}/>
+                    <FontAwesomeIcon icon={faChevronRight}  style={{color:"#1a6aae",fontSize:"50px"}}/>
                     </Col>
                     </Link>
                 </Row>
