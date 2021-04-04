@@ -7,6 +7,8 @@ import Col from 'react-bootstrap/Col';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 import VehicleCard from './vehicleCard';
+import { Cities } from '../constants';
+
 
 
 const Profile = () => {
@@ -67,6 +69,31 @@ const Profile = () => {
 
                     </Col>
                 
+                </Row>
+
+                <Row>
+                    <Col>
+
+                    <Form.Group controlId="formBasicEmail">
+                            <Form.Label className="form-text">Contact No*</Form.Label>
+                            <Form.Control type="number" placeholder="" disabled={isSaved} />
+                    </Form.Group>
+
+                    </Col>
+
+                    <Col>
+                    <Form.Group controlId="formGridState">
+                        <Form.Label className="form-text">City</Form.Label>
+                        <Form.Control as="select" defaultValue="Choose..." disabled={isSaved}>
+                            <option style={{color:"#1a6aae",fontWeight:"bold"}}>Select City</option>
+                            {Cities.map((type)=> {
+                                return(<option value={type} style={{color:"#1a6aae"}}> {type} </option>)
+                            }
+                            )}
+                    </Form.Control>
+                    </Form.Group>
+
+                    </Col>
                 </Row>
                 
                 <Row>
