@@ -36,14 +36,14 @@ const Profile = () => {
 
 
     return ( 
-        <Container>
+        <Container fluid >
         <Container className="register-box" >
             <Card >
                 <Card.Header  className="register-card-title text-center">PROFILE</Card.Header>
             <Card.Body>
             <Form>
                 <Row>
-                    <Col>
+                    <Col lg={6}>
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label className="form-text">First Name*</Form.Label>
                             <Form.Control type="text" placeholder="" disabled={isSaved} />
@@ -51,7 +51,7 @@ const Profile = () => {
 
                     </Col>
                 
-                    <Col>
+                    <Col  lg={6} >
                         <Form.Group controlId="formBasicEmail">
                             <Form.Label className="form-text">Last Name*</Form.Label>
                             <Form.Control type="text" placeholder="" disabled={isSaved} />
@@ -72,7 +72,7 @@ const Profile = () => {
                 </Row>
 
                 <Row>
-                    <Col>
+                    <Col  lg={6} >
 
                     <Form.Group controlId="formBasicEmail">
                             <Form.Label className="form-text">Contact No*</Form.Label>
@@ -81,7 +81,7 @@ const Profile = () => {
 
                     </Col>
 
-                    <Col>
+                    <Col  lg={6}>
                     <Form.Group controlId="formGridState">
                         <Form.Label className="form-text">City</Form.Label>
                         <Form.Control as="select" defaultValue="Choose..." disabled={isSaved}>
@@ -126,48 +126,90 @@ const Profile = () => {
                     </Col>
                 </Row>
 
-                <Row className="align-items-center">
-                    <Col sm="auto" lg="auto" >
+                <Row >
+                <Col  className="text-center">
+                    {isSaved ? 
+                        
                     <Button 
                     variant="primary" 
                     type="submit" 
-                    className="register-btn"
-                    disabled={isEditing}
+                    className="save-btn"
                     onClick={(e)=>handleEditClick(e)}
                     >
-                        Edit
-                    </Button>
-
-                    </Col>
-                    <Col sm="auto" lg="auto" >
+                    Edit
+                    </Button> 
+                    :
                     <Button 
                     variant="primary" 
                     type="submit" 
-                    className="register-btn"
-                    disabled={isSaved}
+                    className="save-btn"
+                    
                     onClick={ e=>  handleSaveClick(e)}
                     >
-                        Save
+                    Save
                     </Button>
+                    
+                    }
 
                     </Col>
+                
                 </Row>
 
             </Form>
             </Card.Body>
             </Card>
+        
         </Container>
-        {/* temo butto */}
-       
-       <h3>your vehicles</h3>
-       <VehicleCard liked={true} />
+                    
+        <h2 className="profile-post-header"><span>YOUR ADVERTISEMENTS</span> </h2>
 
+
+        <Container fluid>
+        <Row className="justify-content-center" >
+           <Col lg={12} xl={6} style={{marginBottom:"20px" }} >
+           <VehicleCard liked={false} isprofileCard={true} />
+
+           </Col>
+
+           <Col lg={12} xl={6} style={{marginBottom:"20px"}} >
+           <VehicleCard liked={true} isprofileCard={true} />
+
+           </Col>
+
+          
+       </Row>
+
+       <Row className="justify-content-center" >
+            <Col lg={12} xl={6} style={{marginBottom:"20px"}}  >
+                <VehicleCard liked={true} isprofileCard={true}  />
+
+           </Col>
+
+           <Col lg={12} xl={6} style={{marginBottom:"20px"}} >
+            <VehicleCard liked={true} isprofileCard={true} />
+
+           </Col>
+           
+       </Row>
        <br/>
+
+       <Row className="justify-content-center">
+        
         <Link to='/add'>
-            <Button variant="primary"  className="register-btn" >
-                Add your Advertisment
-            </Button>
+                <Button variant="primary"  className="save-btn" style={{fontSize:"20px"}}>
+                   POST NEW AD
+                </Button>
         </Link>
+
+       </Row>
+
+        </Container>
+       
+        
+       
+
+       
+        
         
         </Container>
 

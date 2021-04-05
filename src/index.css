@@ -163,7 +163,9 @@ code {
 /* vehicle preview card */
 .vehicle-card{
   max-height: 400px ;
-  max-width: 600px;
+  max-width: 650px  !important;
+  min-width: 580px  !important;
+
   color: #1a6aae;
 }
 .see-more{
@@ -182,5 +184,33 @@ code {
   display: flex !important;
   align-items: center !important;
  
+
+}
+
+/* profile related */
+
+.save-btn{
+  padding: 8px 70px!important;
+  background-color: #1a6aae   !important;
+  font-weight: 700 !important;
+}
+
+.save-btn:hover{
+  padding: 10px 72px !important;
+  background-color: #1a6aae  !important;
+  font-weight: 700 !important;
+}
+
+.profile-post-header{
+   width: 100%; 
+   text-align: center; 
+   border-bottom: 2px solid #1a6aae; 
+   line-height: 0.1em;
+   margin: 50px 0 70px;
+}
+.profile-post-header span{
+  color: #1a6aae;
+  background:white; 
+  padding:0 12px; 
 
 }
