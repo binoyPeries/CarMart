@@ -20,7 +20,7 @@ const Footer = () => {
                 <h5>About Us</h5>
                 <p style={{textAlign:"justify",paddingTop:"10px"}}> <b>CarMart</b> is a one stop e-commerce platform for your favourite vehicles.
                 You can Buy, Sell, Trade  any type of vehicle, across the country, anytime, anywhere and absolutely free of Charge.
-                Posting an advertisement on Careka.lk is so convenient and takes only few minutes to get your vehicle advertised for sale, online.</p>
+                Posting an advertisement on <b>CarMart</b> is so convenient and takes only few minutes to get your vehicle advertised for sale, online.</p>
                     
                 </Col>
                 <Col  sm={6} md={6} lg={3} style={{paddingRight:"80px", paddingBottom:"20px"}}>
