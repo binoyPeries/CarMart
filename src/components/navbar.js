@@ -20,7 +20,7 @@ const NaviBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav justify-content-end">
             
-            <Nav.Link href="/" className='nav-item'>
+            <Nav.Link href="/market" className='nav-item'>
             
             <button className="nav-btn btn btn-outline-primary " >
 

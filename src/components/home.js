@@ -22,7 +22,7 @@ const Home = () => {
             </div>
             
             <div className="d-flex justify-content-center " style={{margin:"15px"}}>
-                <Link to='/'>
+                <Link to='/market'>
                     <button className="home-btn btn btn-primary" >All Vehicles</button>
                 </Link>
             </div>
