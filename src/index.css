@@ -163,7 +163,7 @@ code {
 /* vehicle preview card */
 .vehicle-card{
   max-height: 400px ;
-  max-width: 650px  !important;
+  max-width: 620px  !important;
   min-width: 580px  !important;
 
   color: #1a6aae;
@@ -212,5 +212,22 @@ code {
   color: #1a6aae;
   background:white; 
   padding:0 12px; 
+
+}
+
+/* filter */
+
+.filter-card{
+  width: 80% !important;
+}
+.card-body-filter{
+  margin: 0px !important;
+  padding: 0px !important;
+}
+.side-header-box{
+  
+  color: white;
+  background-color: #092a46;
+  height: 100% !important;
 
 }
