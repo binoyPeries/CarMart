@@ -38,8 +38,8 @@ const VehicleCard = (props) => {
 
                         { !isprofileCard ?
                             <div className="text-left">
-                            <FontAwesomeIcon icon={ isliked == true ? solidHeart : heart }  style={{color:"#1a6aae",fontSize:"20px"}} onClick={toggleLike} /> 
-                            <span onClick={toggleLike} style={{cursor:"pointer",userSelect:"none",fontWeight:"600"}}> { isliked == true ? 'Remove from Favourites' : 'Add to Favourites' } </span> 
+                            <FontAwesomeIcon icon={ isliked === true ? solidHeart : heart }  style={{color:"#1a6aae",fontSize:"20px"}} onClick={toggleLike} /> 
+                            <span onClick={toggleLike} style={{cursor:"pointer",userSelect:"none",fontWeight:"600"}}> { isliked === true ? 'Remove from Favourites' : 'Add to Favourites' } </span> 
 
                         </div>
                         :
