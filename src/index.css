@@ -218,16 +218,41 @@ code {
 /* filter */
 
 .filter-card{
-  width: 80% !important;
+  width: 90% !important;
+  
 }
 .card-body-filter{
   margin: 0px !important;
   padding: 0px !important;
 }
+.card-body-filter .row{
+  margin-right: 0px; 
+  margin-left: 0px;
+}
 .side-header-box{
-  
   color: white;
   background-color: #092a46;
-  height: 100% !important;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  flex-direction: column;
 
+}
+
+.card-body-filter .form-control{
+  font-size: 14px;
+  color: #1a6aae;
+  font-weight: 500;
+
+}
+
+.card-body-filter option{
+  font-size: 15px;
+  color: white;
+  background-color: #1a6aae;
+}
+
+.card-body-filter .form-check-label{
+  color: #1a6aae;
+  font-size: 15px;
 }
