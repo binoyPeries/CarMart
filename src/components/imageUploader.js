@@ -33,6 +33,7 @@ const ImageUploader = (props) => {
             onChange={uploadSingleFile} 
             label={imageName}
             className="image-upload-field" 
+            data-browse="Upload"
             custom/>
             </Form.Group>
         </Row>
