@@ -6,6 +6,7 @@ import Footer from './components/footer';
 import Register from './components/register';
 import Profile from './components/profile';
 import AddVehicle from './components/addVehicle';
+import Market from './components/allVehicles';
 
 
 function App() {
@@ -23,6 +24,9 @@ function App() {
         </Route>
         <Route exact path='/profile'>
           <Profile/>
+        </Route>
+        <Route exact path='/market'>
+          <Market/>
         </Route>
         <Route exact path='/add'>
          <AddVehicle/>
