@@ -218,7 +218,8 @@ code {
 /* filter */
 
 .filter-card{
-  width: 90% !important;
+  width: 100% !important;
+  
   
 }
 .card-body-filter{
@@ -255,4 +256,9 @@ code {
 .card-body-filter .form-check-label{
   color: #1a6aae;
   font-size: 15px;
+}
+
+.search-btn :hover{
+  color: #25A7F7;
+
 }

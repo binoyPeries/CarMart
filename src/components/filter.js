@@ -8,8 +8,10 @@ import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
 const Filter = () => {
     const [price,setPrice] = useState(700000);
     return ( 
-        <Card className="filter-card ">
-            <Card.Body  className="card-body-filter">
+        <Card className="filter-card">
+            <Card.Body  className="card-body-filter ">
+            <Form>
+
                 <Row >
                 
                     <Col lg={2} className="side-header-box" >
@@ -91,10 +93,10 @@ const Filter = () => {
 
                     </Col>
                     
-                    <Col lg={2} className="side-header-box text-center" >
+                    <Col lg={2} className="side-header-box text-center search-btn" style={{cursor:"pointer"}}>
                     <p style={{paddingTop:"15px" , fontSize:"20px", fontWeight:"bold"}}>
                     SEARCH  <br/>
-                    <FontAwesomeIcon icon={faArrowRight} style={{ fontSize:"40px"}}/>
+                    <FontAwesomeIcon icon={faArrowRight} style={{fontSize:"40px"}}/>
                     </p>
                    
                       
@@ -104,6 +106,7 @@ const Filter = () => {
 
 
                 </Row>
+                </Form>
             </Card.Body>
          
         </Card>
