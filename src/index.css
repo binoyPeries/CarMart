@@ -163,8 +163,7 @@ code {
 /* vehicle preview card */
 .vehicle-card{
   max-height: 400px ;
-  max-width: 620px  !important;
-  min-width: 580px  !important;
+  max-width: 580px;
 
   color: #1a6aae;
 }
@@ -219,6 +218,7 @@ code {
 
 .filter-card{
   width: 100% !important;
+ 
   
   
 }
@@ -260,5 +260,18 @@ code {
 
 .search-btn :hover{
   color: #25A7F7;
+
+}
+
+/* all vehicles page */
+
+.main-heading-hr{
+  margin: 0px !important;
+  padding-left: 0px !important;
+  margin-bottom: 30px !important;
+  border:none;
+  height: 5px;
+  background: linear-gradient(to top,#25A7F7,#1a6aae);
+  width: 5%;
 
 }

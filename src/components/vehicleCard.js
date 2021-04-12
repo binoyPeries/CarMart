@@ -21,11 +21,11 @@ const VehicleCard = (props) => {
     }
     return ( 
         
-        <Card  className="vehicle-card">
-            <Card.Body style={{padding:"10px"}}>
+        <Card  className="vehicle-card" >
+            <Card.Body style={{padding:"10px", width:"100%"}} >
                 <Row>
                     <Col sm ={5} >
-                    <img src={fronImg} alt="" style={{maxHeight:"150px"}} />
+                    <img src={fronImg} alt="" style={{maxHeight:"140px"}} />
                     </Col>
                     <Col sm={5} style={{paddingLeft:"0px"}} >
                         
