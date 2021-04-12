@@ -12,7 +12,7 @@ import ImageUploader from './imageUploader';
 const AddVehicle = () => {
     return ( 
         <Container className="register-box" >
-            <Card >
+            <Card className="common-card-outline">
             <Card.Header  className="register-card-title text-center">VEHICLE INFORMATION</Card.Header>
             <Card.Body>
             <Form>
