@@ -8,6 +8,7 @@ import Profile from './components/profile';
 import AddVehicle from './components/addVehicle';
 import Market from './components/allVehicles';
 import Login from './components/login';
+import Vehicle from './components/vehiclePage';
 
 
 function App() {
@@ -31,6 +32,9 @@ function App() {
         </Route>
         <Route exact path='/market'>
           <Market/>
+        </Route>
+        <Route exact path='/market/:id'>
+          <Vehicle/>
         </Route>
         <Route exact path='/add'>
          <AddVehicle/>

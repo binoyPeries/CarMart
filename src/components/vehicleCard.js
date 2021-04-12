@@ -5,7 +5,6 @@ import fronImg from '../images/front.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faChevronRight , faHeart as solidHeart } from '@fortawesome/free-solid-svg-icons';
 import { faHeart as heart}  from '@fortawesome/fontawesome-free-regular';
-
 import { Link } from 'react-router-dom';
 import { useState } from 'react';
 
@@ -49,7 +48,7 @@ const VehicleCard = (props) => {
                         
                     
                     </Col>
-                    <Link to='/'  className="see-more">
+                    <Link to='/market/2'  className="see-more">
                     <Col xs={2} sm={2}  className="text-center" >
                     <FontAwesomeIcon icon={faChevronRight}  style={{color:"#1a6aae",fontSize:"50px"}} />
                     </Col>
