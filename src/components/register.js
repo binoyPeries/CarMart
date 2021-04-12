@@ -5,6 +5,7 @@ import Card from 'react-bootstrap/Card';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 import { Cities } from '../constants';
+import { Link } from 'react-router-dom';
 
 
 
@@ -101,6 +102,22 @@ const Register = () => {
                     <Button variant="primary" type="submit" className="register-btn">
                         Register
                     </Button>
+
+                    </Col>
+                </Row>
+
+                <Row>
+                    <Col className="text-center">
+                    <p style={{marginTop:"10px", fontSize:"17px", color:"#25A7F7"}}>
+                    <span>
+                    Already have an account? 
+                    </span>
+                    <span style={{color:"#092a46", fontWeight:"500"}}>
+                     <Link to='/login'> Login</Link>
+
+                    </span>
+                    
+                    </p>
 
                     </Col>
                 </Row>
