@@ -7,6 +7,7 @@ import Register from './components/register';
 import Profile from './components/profile';
 import AddVehicle from './components/addVehicle';
 import Market from './components/allVehicles';
+import Login from './components/login';
 
 
 function App() {
@@ -18,6 +19,9 @@ function App() {
       <Switch>
         <Route exact path='/'>
           <Home/>
+        </Route>
+        <Route exact path='/login'>
+          <Login/>
         </Route>
         <Route exact path='/register'>
           <Register/>

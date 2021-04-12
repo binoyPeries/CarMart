@@ -33,7 +33,7 @@ const NaviBar = () => {
             <Nav.Link href="/register" className='nav-item'>
               <button className="nav-btn btn btn-outline-primary ">Register</button>
             </Nav.Link>
-            <Nav.Link href="/" className='nav-item'>
+            <Nav.Link href="/login" className='nav-item'>
             <button className="nav-btn btn btn-outline-primary " >Login</button>
             </Nav.Link>
 
