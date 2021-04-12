@@ -24,20 +24,19 @@ const VehicleCard = (props) => {
         <Card  className="vehicle-card" >
             <Card.Body style={{padding:"10px", width:"100%"}} >
                 <Row>
-                    <Col sm ={5} >
+                    <Col xs={12} sm ={5} className="text-center">
                     <img src={fronImg} alt="" style={{maxHeight:"140px"}} />
                     </Col>
-                    <Col sm={5} style={{paddingLeft:"0px"}} >
+                    <Col xs={10} sm={5} className="card-subtext">
                         
                         <h4 style={{fontWeight:"600", marginBottom:"20px"}} className="text-center"> 
-                        <span>TOYOTA CIVIC 2010 </span> 
-                        {/* <FontAwesomeIcon icon={ isliked == true ? solidHeart : heart } size="1x" style={{color:"#1a6aae",}} onClick={toggleLike} /> */}
+                        TOYOTA CIVIC 2010  
                         </h4>
                         <h5 style={{color:"black"}} > LKR 2,500,000</h5>
                         <h6 style={{color:"black"}} > Colombo, Sri Lanka</h6>
 
                         { !isprofileCard ?
-                            <div className="text-left">
+                            <div className=" card-subtext">
                             <FontAwesomeIcon icon={ isliked === true ? solidHeart : heart }  style={{color:"#1a6aae",fontSize:"20px"}} onClick={toggleLike} /> 
                             <span onClick={toggleLike} style={{cursor:"pointer",userSelect:"none",fontWeight:"600"}}> { isliked === true ? 'Remove from Favourites' : 'Add to Favourites' } </span> 
 
@@ -51,8 +50,8 @@ const VehicleCard = (props) => {
                     
                     </Col>
                     <Link to='/'  className="see-more">
-                    <Col sm={2}>
-                    <FontAwesomeIcon icon={faChevronRight}  style={{color:"#1a6aae",fontSize:"50px"}}/>
+                    <Col xs={2} sm={2}  className="text-center" >
+                    <FontAwesomeIcon icon={faChevronRight}  style={{color:"#1a6aae",fontSize:"50px"}} />
                     </Col>
                     </Link>
                 </Row>

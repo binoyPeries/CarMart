@@ -167,6 +167,7 @@ code {
 
   color: #1a6aae;
 }
+
 .see-more{
   display: none !important;
   color: inherit;
@@ -181,10 +182,26 @@ code {
 .vehicle-card:hover  .see-more{
   display: inline-block !important;
   display: flex !important;
-  align-items: center !important;
- 
+  align-items: center !important; 
 
 }
+
+.card-subtext{
+  text-align: left !important;
+  padding-left: 0px !important;
+
+}
+@media only screen and (max-width: 575px) {
+  .card-subtext{
+    padding-left: 40px !important;
+    text-align: center !important;
+  }
+  .vehicle-card{
+    width: 300px !important;
+  }
+
+}
+
 
 /* profile related */
 
