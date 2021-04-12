@@ -15,7 +15,7 @@ import { Link } from 'react-router-dom';
 const Register = () => {
     return ( 
         <Container className="register-box">
-        <Card className="register-card ">
+        <Card className="common-card-outline">
                 <Card.Header  className="register-card-title text-center">CREATE AN ACCOUNT</Card.Header>
             <Card.Body>
             <Form>

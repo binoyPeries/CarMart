@@ -10,7 +10,7 @@ import { Link } from 'react-router-dom';
 const Login = () => {
     return (  
         <Container className="login-box">
-        <Card className="login-card">
+        <Card className="common-card-outline">
                 <Card.Header  className="register-card-title text-center">LOGIN</Card.Header>
             <Card.Body>
             <Form>

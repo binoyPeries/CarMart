@@ -12,6 +12,12 @@ code {
     monospace;
 }
 
+.common-card-outline{
+  background-color: white !important; 
+  box-shadow: 0px  0px 10px 2px  #cfd8e0;
+
+
+}
 /* navbar */
 .navbar-custom{
   position: absolute;
@@ -122,12 +128,7 @@ code {
   }
 }
 
-.register-card{
-  background-color: white !important; 
-  box-shadow: 0px  0px 10px 3px  #cfd8e0;
 
-
-}
 .register-card-title{
   align-items: center !important;
   color: #1a6aae !important;
@@ -168,12 +169,7 @@ code {
   width: 50% !important;
 }
 
-.login-card{
-  background-color: white !important; 
-  box-shadow: 0px  0px 10px 3px  #cfd8e0;
 
-
-}
 
 /* vehicle preview card */
 .vehicle-card{

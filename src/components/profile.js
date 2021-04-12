@@ -38,7 +38,7 @@ const Profile = () => {
     return ( 
         <Container fluid >
         <Container className="register-box" >
-            <Card >
+            <Card className="common-card-outline" >
                 <Card.Header  className="register-card-title text-center">PROFILE</Card.Header>
             <Card.Body>
             <Form>
