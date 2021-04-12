@@ -169,6 +169,12 @@ code {
   width: 50% !important;
 }
 
+@media only screen and (max-width: 750px) {
+  .login-box{
+    width: 100% !important;
+  }
+}
+
 
 
 /* vehicle preview card */
