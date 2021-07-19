@@ -9,6 +9,7 @@ import AddVehicle from './components/addVehicle';
 import Market from './components/allVehicles';
 import Login from './components/login';
 import Vehicle from './components/vehiclePage';
+import Favourites from './components/favourites';
 
 
 function App() {
@@ -38,6 +39,9 @@ function App() {
         </Route>
         <Route exact path='/add'>
          <AddVehicle/>
+        </Route>
+        <Route exact path='/fav'>
+         <Favourites/>
         </Route>
       </Switch>
       </div>

@@ -38,7 +38,7 @@ const NaviBar = () => {
             </Nav.Link>
 
             {/* user logged in */}
-            <Nav.Link  href ='/'  className='nav-item'>
+            <Nav.Link  href ='/fav'  className='nav-item'>
             <FontAwesomeIcon icon={faCar}  size="2x" style={{color:'#25A7F7'}}/>
             </Nav.Link>
             <Nav.Link href="/profile" className='nav-item'>
