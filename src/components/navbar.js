@@ -3,6 +3,7 @@ import Nav from 'react-bootstrap/Nav' ;
 import logo from '../images/logo1-sm2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCar,faUserCircle, } from '@fortawesome/free-solid-svg-icons'
+import { Link } from 'react-router-dom';
 
 
 const NaviBar = () => {
@@ -20,33 +21,33 @@ const NaviBar = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav justify-content-end">
             
-            <Nav.Link href="/market" className='nav-item'>
+            <Link to="/market" className='nav-item'>
             
             <button className="nav-btn btn btn-outline-primary " >
 
             Market
             </button>
-            </Nav.Link>
-            <Nav className="ml-auto nav-custom" >
+        </Link>            
+        <Nav className="ml-auto nav-custom" >
 
             {/* no user logged in */}
-            <Nav.Link href="/register" className='nav-item'>
+            <Link to="/register" className='nav-item'>
               <button className="nav-btn btn btn-outline-primary ">Register</button>
-            </Nav.Link>
-            <Nav.Link href="/login" className='nav-item'>
+            </Link>
+            <Link to="/login" className='nav-item'>
             <button className="nav-btn btn btn-outline-primary " >Login</button>
-            </Nav.Link>
+            </Link>
 
             {/* user logged in */}
-            <Nav.Link  href ='/fav'  className='nav-item'>
+            <Link  to ='/fav'  className='nav-item'>
             <FontAwesomeIcon icon={faCar}  size="2x" style={{color:'#25A7F7'}}/>
-            </Nav.Link>
-            <Nav.Link href="/profile" className='nav-item'>
+            </Link>
+            <Link to="/profile" className='nav-item'>
             <FontAwesomeIcon icon={faUserCircle}  size="2x" style={{color:'#25A7F7'}}/>
-            </Nav.Link>
-            <Nav.Link href="/" className='nav-item'>
+            </Link>
+            <Link to="/" className='nav-item'>
             <button className="nav-btn btn btn-outline-primary " >Logout</button>
-            </Nav.Link>
+            </Link>
             
 
             </Nav>
