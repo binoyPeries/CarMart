@@ -16,7 +16,7 @@ const Login = () => {
             <Form>
                 <Row>
                     <Col  >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="email">
                             <Form.Label className="form-text">Email*</Form.Label>
                             <Form.Control type="email" placeholder=""  />
                         </Form.Group>
@@ -26,7 +26,7 @@ const Login = () => {
                 </Row>
                 <Row>
                     <Col >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="pw">
                             <Form.Label className="form-text">Password*</Form.Label>
                             <Form.Control type="password" placeholder=""  />
                         </Form.Group>

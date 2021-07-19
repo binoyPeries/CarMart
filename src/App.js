@@ -35,7 +35,7 @@ function App() {
           <Market/>
         </Route>
         <Route exact path='/market/:id'>
-          <Vehicle/>
+          <Vehicle />
         </Route>
         <Route exact path='/add'>
          <AddVehicle/>

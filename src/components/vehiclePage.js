@@ -57,23 +57,23 @@ const Vehicle = () => {
                    
                     <tbody className="text-center">
                         <tr>
-                        <td colSpan="2"> Make  : Toyota </td>
+                        <td colSpan="2" key="1"> Make  : Toyota </td>
                         </tr>
 
                         <tr>
-                        <td colSpan="2" > Model  : Civic </td>
+                        <td colSpan="2"  key="2"> Model  : Civic </td>
                         </tr>
 
                         <tr>
-                        <td colSpan="2" > Year  : 2010  </td>
+                        <td colSpan="2"  key="3" > Year  : 2010  </td>
                         </tr>
 
                         <tr>
-                        <td colSpan="2" > Condition  : Used </td>
+                        <td colSpan="2"  key="4" > Condition  : Used </td>
                         </tr>
 
                         <tr>
-                        <td colSpan="2" > Mileage :  30,000 km </td>
+                        <td colSpan="2"  key="5" > Mileage :  30,000 km </td>
                         </tr>
                     
                     </tbody>
@@ -116,15 +116,15 @@ const Vehicle = () => {
                     <tbody className="text-center">
 
                         <tr>
-                        <td colSpan="2"> Transmission  : Manual </td>
+                        <td colSpan="2"  key="1" > Transmission  : Manual </td>
                         </tr>
 
                         <tr>
-                        <td colSpan="2" > Fuel Type  : Petrol </td>
+                        <td colSpan="2"  key="2" > Fuel Type  : Petrol </td>
                         </tr>
 
                         <tr>
-                        <td colSpan="2" > Engine Capacity  : 1500 cc  </td>
+                        <td colSpan="2"   key="3"> Engine Capacity  : 1500 cc  </td>
                         </tr>
 
                     
@@ -166,13 +166,6 @@ const Vehicle = () => {
 
                         </Col>
                     </Row>
-                    
-                   
-                    
-                    
-
-                  
-
                     
                     </Card.Body>
                 </Card>

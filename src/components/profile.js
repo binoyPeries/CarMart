@@ -45,7 +45,7 @@ const Profile = () => {
             <Form>
                 <Row>
                     <Col lg={6}>
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="1">
                             <Form.Label className="form-text">First Name*</Form.Label>
                             <Form.Control type="text" placeholder="" disabled={isSaved} />
                         </Form.Group>
@@ -53,7 +53,7 @@ const Profile = () => {
                     </Col>
                 
                     <Col  lg={6} >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="2">
                             <Form.Label className="form-text">Last Name*</Form.Label>
                             <Form.Control type="text" placeholder="" disabled={isSaved} />
                         </Form.Group>
@@ -63,7 +63,7 @@ const Profile = () => {
                 </Row>
                 <Row>
                     <Col >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="3">
                             <Form.Label className="form-text">Email*</Form.Label>
                             <Form.Control type="email" placeholder=""  disabled={isSaved} />
                         </Form.Group>
@@ -75,7 +75,7 @@ const Profile = () => {
                 <Row>
                     <Col  lg={6} >
 
-                    <Form.Group controlId="formBasicEmail">
+                    <Form.Group controlId="4">
                             <Form.Label className="form-text">Contact No*</Form.Label>
                             <Form.Control type="number" placeholder="" disabled={isSaved} />
                     </Form.Group>
@@ -87,8 +87,8 @@ const Profile = () => {
                         <Form.Label className="form-text">City</Form.Label>
                         <Form.Control as="select" defaultValue="Choose..." disabled={isSaved}>
                             <option style={{color:"#1a6aae",fontWeight:"bold"}}>Select City</option>
-                            {Cities.map((type)=> {
-                                return(<option value={type} style={{color:"#1a6aae"}}> {type} </option>)
+                            {Cities.map((type,index)=> {
+                                return(<option value={type} style={{color:"#1a6aae"}} key={index}> {type} </option>)
                             }
                             )}
                     </Form.Control>
@@ -99,7 +99,7 @@ const Profile = () => {
                 
                 <Row>
                     <Col>
-                        <Form.Group controlId="formBasicPassword">
+                        <Form.Group controlId="5">
                             <Form.Label className="form-text">Current Password*</Form.Label>
                             <Form.Control type="password" disabled={isSaved} />
                          </Form.Group>
@@ -109,7 +109,7 @@ const Profile = () => {
 
                 <Row>
                     <Col>
-                        <Form.Group controlId="formBasicPassword" >
+                        <Form.Group controlId="6" >
                             <Form.Label className="form-text" >New Password*</Form.Label>
                             <Form.Control type="password" disabled={isSaved}  />
                          </Form.Group>
@@ -119,7 +119,7 @@ const Profile = () => {
 
                 <Row>
                     <Col>
-                        <Form.Group controlId="formBasicPassword" >
+                        <Form.Group controlId="7" >
                             <Form.Label className="form-text" >Confirm New Password*</Form.Label>
                             <Form.Control type="password" disabled={isSaved}  />
                          </Form.Group>

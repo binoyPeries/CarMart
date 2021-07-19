@@ -21,7 +21,7 @@ const Register = () => {
             <Form>
                 <Row>
                     <Col lg={6} >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="fname">
                             <Form.Label className="form-text">First Name*</Form.Label>
                             <Form.Control type="text" placeholder=""  />
                         </Form.Group>
@@ -29,7 +29,7 @@ const Register = () => {
                     </Col>
                 
                     <Col lg={6} >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="lname">
                             <Form.Label className="form-text">Last Name*</Form.Label>
                             <Form.Control type="text" placeholder=""  />
                         </Form.Group>
@@ -39,14 +39,14 @@ const Register = () => {
                 </Row>
                 <Row>
                     <Col lg={6}>
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="email">
                             <Form.Label className="form-text">Email*</Form.Label>
                             <Form.Control type="email" placeholder=""  />
                         </Form.Group>
 
                     </Col>
                     <Col lg={6} >
-                        <Form.Group controlId="formBasicEmail">
+                        <Form.Group controlId="conno">
                             <Form.Label className="form-text">Contact No*</Form.Label>
                             <Form.Control type="number" placeholder=""  />
                         </Form.Group>
@@ -60,8 +60,8 @@ const Register = () => {
                         <Form.Label className="form-text">City</Form.Label>
                         <Form.Control as="select" defaultValue="Choose...">
                             <option style={{color:"#1a6aae",fontWeight:"bold"}}>Select City</option>
-                            {Cities.map((type)=> {
-                                return(<option value={type} style={{color:"#1a6aae"}}> {type} </option>)
+                            {Cities.map((type,index)=> {
+                                return(<option value={type} style={{color:"#1a6aae"}} key={index}> {type} </option>)
                             }
                             )}
                     </Form.Control>
@@ -79,7 +79,7 @@ const Register = () => {
                 </Row>
                 <Row>
                     <Col>
-                        <Form.Group controlId="formBasicPassword">
+                        <Form.Group controlId="pw1">
                             <Form.Label className="form-text">Password*</Form.Label>
                             <Form.Control type="password" />
                          </Form.Group>
@@ -89,7 +89,7 @@ const Register = () => {
 
                 <Row>
                     <Col>
-                        <Form.Group controlId="formBasicPassword" >
+                        <Form.Group controlId="pw2" >
                             <Form.Label className="form-text" >Confirm Password*</Form.Label>
                             <Form.Control type="password"  />
                          </Form.Group>

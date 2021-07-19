@@ -24,8 +24,8 @@ const AddVehicle = () => {
                         <Form.Label className="form-text">Type</Form.Label>
                         <Form.Control as="select" defaultValue="Choose...">
                             <option>Select Type</option>
-                            {VehicleTypes.map((type)=> {
-                                return(<option value={type}> {type} </option>)
+                            {VehicleTypes.map((type,index)=> {
+                                return(<option value={type} key={index}> {type} </option>)
                             }
                             )}
                         </Form.Control>
@@ -60,9 +60,9 @@ const AddVehicle = () => {
                         <Form.Group controlId="formGridState">
                         <Form.Label className="form-text">Condition</Form.Label>
                         <Form.Control as="select" defaultValue="Choose...">
-                            <option>Select </option>
-                            <option>Brand New</option>
-                            <option>Used</option>
+                            <option key="1" >Select </option>
+                            <option key="2" >Brand New</option>
+                            <option key="3" >Used</option>
                             
                         </Form.Control>
                         </Form.Group>
@@ -89,10 +89,10 @@ const AddVehicle = () => {
                         <Form.Group controlId="formGridState">
                         <Form.Label className="form-text">Transmission</Form.Label>
                         <Form.Control as="select" defaultValue="Choose...">
-                            <option>Select </option>
-                            <option>Manual</option>
-                            <option>Automatic</option>
-                            <option>Semi-automatic </option>
+                            <option key="1">Select </option>
+                            <option key="2">Manual</option>
+                            <option key="3">Automatic</option>
+                            <option key="4">Semi-automatic </option>
                             
                         </Form.Control>
                         </Form.Group>
@@ -102,11 +102,11 @@ const AddVehicle = () => {
                         <Form.Group controlId="formGridState">
                         <Form.Label className="form-text">Fuel Type</Form.Label>
                         <Form.Control as="select" defaultValue="Choose...">
-                            <option>Select </option>
-                            <option>Petrol </option>
-                            <option>Diesel</option>
-                            <option>Hybrid</option>
-                            <option>Electric </option>
+                            <option key="1">Select </option>
+                            <option key="2">Petrol </option>
+                            <option key="3">Diesel</option>
+                            <option key="4" >Hybrid</option>
+                            <option key="5" >Electric </option>
                             
                         </Form.Control>
                         </Form.Group>

@@ -28,8 +28,8 @@ const Filter = () => {
                                 <Form.Group controlId="formGridState">
                                 <Form.Control as="select" defaultValue="Choose...">
                                     <option>Any Type</option>
-                                    {VehicleTypes.map((type)=> {
-                                             return(<option value={type} > {type} </option>)
+                                    {VehicleTypes.map((type,index)=> {
+                                             return(<option value={type} key={index}> {type} </option>)
                                     }
                                     )}
                                 </Form.Control>
@@ -41,7 +41,7 @@ const Filter = () => {
                                 <Form.Control as="select" defaultValue="Any city">
                                     <option >Any City</option>
                                     {Cities.map((type,index)=> {
-                                        return(<option value={type}  id={index}> {type} </option>)
+                                        return(<option value={type}  key={index}> {type} </option>)
                                     }
                                     )}
                                 </Form.Control>
