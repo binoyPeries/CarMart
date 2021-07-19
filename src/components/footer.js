@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCopyright, faVoicemail ,faInbox} from '@fortawesome/free-solid-svg-icons';
 import { faInstagram, faFacebook, faTwitter ,  } from '@fortawesome/free-brands-svg-icons';
-import logo from '../images/logo1-sm2.png'
 
 
 import Row from 'react-bootstrap/Row';

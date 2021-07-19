@@ -2,7 +2,7 @@ import Navbar  from 'react-bootstrap/Navbar';
 import Nav from 'react-bootstrap/Nav' ;
 import logo from '../images/logo1-sm2.png'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faCar,faUserCircle, car } from '@fortawesome/free-solid-svg-icons'
+import { faCar,faUserCircle, } from '@fortawesome/free-solid-svg-icons'
 
 
 const NaviBar = () => {

@@ -1,5 +1,4 @@
 import Row from 'react-bootstrap/Row';
-import Col from 'react-bootstrap/Col';
 import Form from 'react-bootstrap/Form';
 
 import { useState } from "react";
@@ -13,10 +12,10 @@ const ImageUploader = (props) => {
         
     }
     //related to upload check later
-    const upload =(e) =>{
-        e.preventDefault()
-        console.log(file)
-    }
+    // const upload =(e) =>{
+    //     e.preventDefault()
+    //     console.log(file)
+    // }
 
     let imgPreview;
     if (file) {

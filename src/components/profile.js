@@ -23,6 +23,7 @@ const Profile = () => {
         e.preventDefault();
         setIsEditing(false);
         setIsSaved(true);
+        console.log(isEditing);
         
     }
 
