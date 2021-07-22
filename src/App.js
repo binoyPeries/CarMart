@@ -1,7 +1,7 @@
 import './index.css';
 import NaviBar from './components/navbar';
 import Home from './components/home';
-import {BrowserRouter as Router, Route,Switch} from 'react-router-dom';
+import {BrowserRouter, Route,Switch} from 'react-router-dom';
 import Footer from './components/footer';
 import Register from './components/register';
 import Profile from './components/profile';
@@ -14,7 +14,7 @@ import Favourites from './components/favourites';
 
 function App() {
   return (
-    <Router>
+    <BrowserRouter>
     <div className="app">
       <NaviBar/>
       <div className="">
@@ -48,7 +48,7 @@ function App() {
       <Footer/>
     </div>
 
-    </Router>
+    </BrowserRouter>
     //to run the server
     // npx json-server --watch Db/db.json --port 8000 
 
